@@ -53,12 +53,12 @@ const AdsBox = () => {
             <Image src="/ramazan.jpg" fill alt="Valorant" />
           </AspectRatio>
         </div>
-        <div className="w-full rounded-2xl overflow-hidden">
+        <div className="w-full rounded-2xl overflow-hidden ">
           <AspectRatio ratio={16 / 9}>
             <Image src="/rise.jpg" fill alt="Valorant" />
           </AspectRatio>
         </div>
-        <div className="flex-1 flex items-center justify-center bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 rounded-2xl overflow-hidden">
+        <div className="cursor-pointer hover:scale-125 transition-all duration-300 flex-1 flex items-center justify-center bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 rounded-2xl overflow-hidden">
           <p className="text-2xl font-bold">INDIRIM KUPONU: RAMADAN10</p>
         </div>
       </div>
