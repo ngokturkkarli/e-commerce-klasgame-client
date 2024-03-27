@@ -7,3 +7,9 @@
     @apply bg-[#232323];
   }
 }
+
+.carousel .control-dots .dot {
+  border-radius: 100%;
+  width: 20px !important;
+  height: 20px !important;
+}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useDebouncedState } from '@mantine/hooks';
+import { useDebounce } from 'ahooks';
 
 const FAKE_DATA = [
   { id: 1, name: 'Rise Online Gold Bar' },
@@ -10,7 +10,8 @@ const FAKE_DATA = [
 ];
 
 export function SearchBox() {
-  const [value, setValue] = useDebouncedState<string>('', 200);
+  const [value, setValue] = useState<string>('');
+  const debouncedValue = useDebounce(value, { wait: 500 });
   const [isOpenBox, setIsOpenBox] = useState<boolean>(false);
 
   useEffect(() => {
@@ -19,10 +20,10 @@ export function SearchBox() {
     } else {
       setIsOpenBox(true);
     }
-  }, [value]);
+  }, [debouncedValue]);
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <input
         type="text"
         defaultValue={value}
