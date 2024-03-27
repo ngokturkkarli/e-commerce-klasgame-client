@@ -4,10 +4,11 @@
     ".eslintrc.json": true,
     ".gitignore": true,
     "next-env.d.ts": true,
-    "package-lock.json": true,
     "postcss.config.js": true,
     "tsconfig.json": true,
     ".vscode": true,
-    "next.config.mjs": true
+    "next.config.mjs": true,
+    ".next": true,
+    "package-lock.json": true
   }
 }
