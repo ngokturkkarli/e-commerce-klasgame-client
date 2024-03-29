@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Button } from '../ui/button';
 
 const Card = () => {
   return (
@@ -11,13 +12,10 @@ const Card = () => {
         fill
         alt="Valorant"
       />
-      <div className="bg-black/60 h-20 w-full flex flex-col items-center py-2">
+      <div className="bg-black/60 w-full flex flex-col gap-2 items-center py-3">
         <p className="text-lg font-bold">Valorant Point</p>
-        <Link
-          href={'/'}
-          className="bg-orange-500 font-bold text-black py-1 px-6 rounded-lg"
-        >
-          Satın Al
+        <Link href={'/'}>
+          <Button className="bg-brand font-bold">Satın Al</Button>
         </Link>
       </div>
     </div>

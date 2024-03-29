@@ -12,6 +12,9 @@ const config = {
   prefix: '',
   theme: {
     extend: {
+      colors: {
+        brand: '#f97316',
+      },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },

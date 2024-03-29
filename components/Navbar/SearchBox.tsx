@@ -29,10 +29,10 @@ export function SearchBox() {
         defaultValue={value}
         onChange={(e) => setValue(e.currentTarget.value)}
         placeholder="Ürün ya da oyun adını yazınız."
-        className="w-[600px] h-12 px-4 outline-none border-2 border-white/10 rounded-2xl bg-transparent"
+        className="w-[600px] h-12 px-4 outline-none border-2 border-white/20 rounded-2xl bg-transparent"
       />
       {isOpenBox && (
-        <div className="absolute bg-stone-900 border border-white/10 w-[600px] flex flex-col gap-2 mt-1 rounded-lg p-4">
+        <div className="absolute bg-stone-900 border border-white/20 w-[600px] flex flex-col gap-2 mt-1 rounded-lg p-4">
           {FAKE_DATA.map((item: any) => (
             <div
               key={item.id}

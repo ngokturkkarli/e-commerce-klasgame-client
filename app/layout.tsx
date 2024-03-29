@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Inter as FontSans } from 'next/font/google';
+import { Quicksand as FontSans } from 'next/font/google';
 import Navbar from '@/components/Navbar/Navbar';
 import { cn } from '@/lib/utils';
 

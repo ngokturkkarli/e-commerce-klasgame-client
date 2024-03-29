@@ -15,7 +15,7 @@ const MostSaled = () => {
       >
         <TabsList className="w-full bg-transparent rounded-lg p-0">
           <TabsTrigger
-            className="bg-stone-900 data-[state=active]:scale-110 h-12 w-[calc(100%/6)] text-lg font-bold data-[state=active]:bg-orange-500"
+            className="bg-stone-900 data-[state=active]:scale-110 h-12 w-[calc(100%/6)] text-lg font-bold data-[state=active]:bg-brand"
             value="most-saled"
           >
             Çok Satanlar
