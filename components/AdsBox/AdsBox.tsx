@@ -24,9 +24,9 @@ const FAKE_DATA = [
 
 const AdsBox = () => {
   return (
-    <Container className="flex gap-4">
+    <Container className="flex flex-col lg:flex-row gap-4">
       <Carousel
-        className="w-[70%] rounded-2xl overflow-hidden"
+        className="w-full lg:w-[70%] rounded-2xl overflow-hidden"
         showStatus={false}
         autoPlay={true}
         infiniteLoop={true}
@@ -47,19 +47,16 @@ const AdsBox = () => {
           </AspectRatio>
         </div>
       </Carousel>
-      <div className="flex-1 flex flex-col gap-4">
-        <div className="w-full rounded-2xl overflow-hidden hover:scale-110 transition-all duration-300 cursor-pointer">
+      <div className="lg:flex-1 grid grid-cols-2 lg:flex lg:flex-col lg:justify-around gap-4 lg:gap-0">
+        <div className="w-full rounded-2xl overflow-hidden lg:hover:scale-110 transition-all duration-300 cursor-pointer">
           <AspectRatio ratio={16 / 9}>
             <Image src="/ramazan.jpg" fill alt="Valorant" />
           </AspectRatio>
         </div>
-        <div className="w-full rounded-2xl overflow-hidden hover:scale-110 transition-all duration-300 cursor-pointer">
+        <div className="w-full rounded-2xl overflow-hidden lg:hover:scale-110 transition-all duration-300 cursor-pointer">
           <AspectRatio ratio={16 / 9}>
             <Image src="/rise.jpg" fill alt="Valorant" />
           </AspectRatio>
-        </div>
-        <div className="cursor-pointer hover:scale-125 transition-all duration-300 flex-1 center bg-gradient-to-r from-brand via-red-500 to-yellow-500 rounded-2xl overflow-hidden">
-          <p className="text-2xl font-bold">INDIRIM KUPONU: RAMADAN10</p>
         </div>
       </div>
     </Container>

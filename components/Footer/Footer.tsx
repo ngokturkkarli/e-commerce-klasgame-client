@@ -11,10 +11,10 @@ import {
 const Footer = () => {
   return (
     <div className="relative bg-stone-900 flex justify-center py-12">
-      <Container className="flex gap-4 mb-4">
+      <Container className="flex flex-col lg:flex-row gap-4 mb-4">
         <div className="flex flex-col gap-4 h-full justify-center">
           <Link href={'/'}>
-            <h2 className="text-4xl font-bold tracking-widest">
+            <h2 className="text-4xl center lg: font-bold tracking-widest">
               <span className="text-brand">KLAS</span>GAME
             </h2>
           </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 flex gap-4 justify-around">
+        <div className="flex-1 flex flex-col lg:flex-row gap-4 justify-around">
           <div className="flex flex-col gap-3">
             <h2 className="text-lg font-bold pl-2">KLASGAME</h2>
             <div className="flex flex-col gap-1">

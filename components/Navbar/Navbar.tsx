@@ -10,15 +10,16 @@ import Basket from '../Basket/Basket';
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 bg-[#313131] center mt-10">
-      <Container className="flex justify-between items-center">
+    <div className="w-full flex flex-col bg-[#313131] center">
+      <div className="h-12 w-full bg-stone-700"></div>
+      <Container className="h-20 flex justify-center lg:justify-between items-center">
         <Link href={'/'}>
           <h2 className="text-4xl font-bold tracking-widest">
             <span className="text-brand">KLAS</span>GAME
           </h2>
         </Link>
         <SearchBox />
-        <div className="center gap-4">
+        <div className="hidden lg:center gap-4">
           <Basket />
           <div className="w-[200px] group bg-stone-800 flex items-center rounded-xl overflow-hidden">
             <Login />

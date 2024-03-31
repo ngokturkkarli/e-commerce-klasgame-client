@@ -22,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn('min-h-screen font-sans antialiased', fontSans.variable)}
+        className={cn(
+          'min-h-screen font-sans antialiased min-w-full',
+          fontSans.variable
+        )}
       >
         <div className="flex flex-col gap-8 w-full text-white">
           <Navbar />
