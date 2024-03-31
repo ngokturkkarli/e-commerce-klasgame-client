@@ -4,7 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Container from '../Container';
 import { SearchBox } from './SearchBox';
-import { IoBasketOutline } from 'react-icons/io5';
+import Login from '../AuthModals/Login';
+import Register from '../AuthModals/Register';
+import Basket from '../Basket/Basket';
 
 const Navbar = () => {
   return (
@@ -17,23 +19,11 @@ const Navbar = () => {
         </Link>
         <SearchBox />
         <div className="center gap-4">
-          <div className="h-10 px-3 rounded-xl hover:bg-white/20 transition-all duration-200 center text-center bg-stone-800">
-            <IoBasketOutline size={20} />
-          </div>
+          <Basket />
           <div className="w-[200px] group bg-stone-800 flex items-center rounded-xl overflow-hidden">
-            <Link
-              href={'giris-yap'}
-              className="w-full h-10 center hover:bg-white/20 transition-all duration-200"
-            >
-              Giriş Yap
-            </Link>
+            <Login />
             <div className="h-6 w-1 bg-white/20 group-hover:hidden"></div>
-            <Link
-              href={'kayit-ol'}
-              className="w-full h-10 center hover:bg-white/20 transition-all duration-200"
-            >
-              Kayıt Ol
-            </Link>
+            <Register />
           </div>
         </div>
       </Container>
