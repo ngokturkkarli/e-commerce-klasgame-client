@@ -6,7 +6,7 @@ import InfoBox from '@/components/InfoBox/InfoBox';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col gap-6 items-center pb-36">
+    <main className="min-h-screen flex flex-col gap-6 items-center">
       <AdsBox />
       <MostSaled />
       <StreamersBox />

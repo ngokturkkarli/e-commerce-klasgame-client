@@ -3,6 +3,7 @@ import './globals.css';
 import { Quicksand as FontSans } from 'next/font/google';
 import Navbar from '@/components/Navbar/Navbar';
 import { cn } from '@/lib/utils';
+import Footer from '@/components/Footer/Footer';
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className="flex flex-col gap-8 w-full text-white">
           <Navbar />
           <div>{children}</div>
+          <Footer />
         </div>
       </body>
     </html>
