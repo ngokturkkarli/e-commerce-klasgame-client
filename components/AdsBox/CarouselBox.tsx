@@ -1,7 +1,7 @@
 'use client';
-import { Carousel } from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { AspectRatio } from '../ui/aspect-ratio';
+import {AspectRatio} from '../ui/aspect-ratio';
 import Image from 'next/image';
 import React from 'react';
 
@@ -10,7 +10,9 @@ type CarouselItem = {
   image: string;
 };
 
-const CarouselBox = ({ data }: { data: CarouselItem[] }) => {
+const CarouselBox = ({data}: { data: CarouselItem[] }) => {
+  // @ts-ignore
+  // @ts-ignore
   return (
     <Carousel
       className="w-full lg:w-[70%] rounded-2xl overflow-hidden"
@@ -23,18 +25,18 @@ const CarouselBox = ({ data }: { data: CarouselItem[] }) => {
       swipeable={true}
       emulateTouch={true}
     >
-      {data.map((d) => (
-        <CarouselItem item={d} />
+      {data.map((index: any, d: any) => (
+        <CarouselItem key={index} item={d}/>
       ))}
     </Carousel>
   );
 };
 
-const CarouselItem = ({ item }: { item: CarouselItem }) => {
+const CarouselItem = ({item}: { item: CarouselItem }) => {
   return (
     <div className="w-full">
       <AspectRatio ratio={16 / 9}>
-        <Image src={`${item.image}`} fill alt="Valorant" />
+        <Image src={`${item.image}`} fill alt="Valorant"/>
       </AspectRatio>
     </div>
   );
